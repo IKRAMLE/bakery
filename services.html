@@ -12,57 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-    <style>
-   .category-options {
-        display: flex;
-        justify-content: center;
-        margin-top: 8.5rem;
-        margin-right: -10px;
-        padding: 0 20px; 
-      }
 
-      .category-list {
-        display: flex;
-        gap: 5.5rem; 
-         list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-        .category-item {
-          background-color: rgb(255, 255, 255); 
-          padding: 12px 18px;
-          border-radius: 5px;
-          cursor: pointer;
-          transition: all 0.3s ease-in-out;
-          text-align: center;
-          min-width: 120px;  
-        }
-  
-        .category-item:hover {
-          background-color: darkred;
-          transform: translateY(-2px);  
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
-        }
-  
-        .category-name {
-          color: rgb(0, 0, 0);
-          font-weight: bold;
-          margin: 0;
-          margin-bottom: 4px;
-        }
-  
-        .item-count {
-          color: rgb(0, 0, 0);
-          margin: 0;
-          font-size: 0.9rem;
-          opacity: 0.9;
-        }
-  
-        .category-item:hover .category-name,
-        .category-item:hover .item-count {
-          color: #ffffff;
-        }
-      </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -109,133 +59,100 @@
     <div class="category-options">
       <ul class="category-list">
         <li class="category-item">
-          <p class="category-name">Breads</p>
-          <p class="item-count">10 items</p>
+          <a href="#" class="category-link">
+            <p class="category-name">Breads</p>
+            <p class="item-count">9 items</p>
+          </a>
         </li>
         <li class="category-item">
-          <p class="category-name">Croissants</p>
-          <p class="item-count">10 items</p>
+          <a href="#" class="category-link">
+            <p class="category-name">Croissants</p>
+            <p class="item-count">10 items</p>
+          </a>
         </li>
         <li class="category-item">
-          <p class="category-name">Cakes</p>
-          <p class="item-count">15 items</p>
+          <a href="#" class="category-link">
+            <p class="category-name">Cakes</p>
+            <p class="item-count">15 items</p>
+          </a>
         </li>
         <li class="category-item">
-          <p class="category-name">Cookies</p>
-          <p class="item-count">7 items</p>
+          <a href="#" class="category-link">
+            <p class="category-name">Cookies</p>
+            <p class="item-count">7 items</p>
+          </a>
         </li>
         <li class="category-item">
-          <p class="category-name">Cupcakes</p>
-          <p class="item-count">20 items</p>
+          <a href="#" class="category-link">
+            <p class="category-name">Cupcakes</p>
+            <p class="item-count">20 items</p>
+          </a>
         </li>
       </ul>
     </div>
 
+    <!-- bread-card section  -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Footer
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h6>Menu</h6>
-          <ul>
-            <li><a href="#menu">Cakes</a></li>
-            <li><a href="#menu">Pastries</a></li>
-            <li><a href="#menu">Cookies</a></li>
-            <li><a href="#menu">Bread</a></li>
-            <li><a href="#menu">Desserts</a></li>
-          </ul>
+    <section class="bread-selection">
+    <div class="selection-container">
+        <div class="bread-card">
+            <img src="images/classic-baguette.jpg" alt="Classic Baguette" />
+            <h3>Classic Baguette</h3>
+            <p>10 DH</p>
+            <button>Order Now</button>
         </div>
-
-        <div class="footer-section">
-          <h6>About Us</h6>
-          <ul>
-            <li><a href="#about">Our Story</a></li>
-            <li><a href="#about">Our Bakers</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#careers">Careers</a></li>
-          </ul>
+        <div class="bread-card">
+            <img src="images/whole-wheat-bread.jpg" alt="Whole Wheat Bread"  />
+            <h3>Whole Wheat Bread</h3>
+            <p>15 DH</p>
+            <button>Order Now</button>
         </div>
-
-        <div class="footer-section">
-          <h6>Support</h6>
-          <ul>
-            <li><a href="#contact">Customer Service</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Order Guide</a></li>
-            <li><a href="#">Delivery Options</a></li>
-            <li><a href="#">Feedback</a></li>
-          </ul>
+        <div class="bread-card">
+            <img src="images/sourdough-bread.jpg" alt="Sourdough Bread" />
+            <h3>Sourdough Bread</h3>
+            <p>20 DH</p>
+            <button>Order Now</button>
         </div>
-
-        <div class="footer-section">
-          <h6>Follow Us</h6>
-          <div class="social-links">
-            <a href="#" class="social-link">
-              <img src="images/icons8-facebook-96.png" alt="Facebook" />
-              <span>Facebook</span>
-            </a>
-            <a href="#" class="social-link">
-              <img src="images/icons8-instagram-48.png" alt="Instagram" />
-              <span>Instagram</span>
-            </a>
-            <a href="#" class="social-link">
-              <img src="images/icons8-twitter-48.png" alt="Twitter" />
-              <span>Twitter</span>
-            </a>
-            <a href="#" class="social-link">
-              <img src="images/icons8-pinterest-48.png" alt="Twitter" />
-              <span>Pintrest</span>
-            </a>
-          </div>
+        <div class="bread-card">
+            <img src="images/rye-bread.jpg" alt="Rye Bread" />
+            <h3>Rye Bread</h3>
+            <p>18 DH</p>
+            <button>Order Now</button>
         </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>
-          &copy; 2025-2030 Sweet Haven Bakery | All Rights Reserved.
-          <br />
-          made with <i class="fa-solid fa-heart"></i> by Ikram
-        </p>
-        <div class="footer-bottom-links">
-          <a href="#">Terms of Service</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Site Map</a>
-          <select class="language-select">
-            <option selected>Select Language</option>
-            <option value="en">English</option>
-            <option value="ar">Arabic</option>
-          </select>
+        <div class="bread-card">
+            <img src="images/focaccia.jpg" alt="Focaccia" />
+            <h3>Focaccia</h3>
+            <p>22 DH</p>
+            <button>Order Now</button>
         </div>
-      </div>
-    </footer> -->
+        <div class="bread-card">
+            <img src="images/brioche.jpg" alt="Brioche" />
+            <h3>Brioche</h3>
+            <p>25 DH</p>
+            <button>Order Now</button>
+        </div>
+        <div class="bread-card">
+            <img src="images/multigrain-bread.jpg" alt="Multigrain Bread" />
+            <h3>Multigrain Bread</h3>
+            <p>20 DH</p>
+            <button>Order Now</button>
+        </div>
+        <div class="bread-card">
+            <img src="images/garlic-bread.jpg" alt="Pita Bread" />
+            <h3>garlic Bread</h3>
+            <p>12 DH</p>
+            <button>Order Now</button>
+        </div>
+        <div class="bread-card">
+            <img src="images/challah-bread.jpg" alt="Pita Bread" />
+            <h3>challah Bread</h3>
+            <p>12 DH</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+</section>
+
+  
+ 
   </body>
 </html>
