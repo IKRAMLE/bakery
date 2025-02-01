@@ -1,0 +1,376 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(252, 203, 211);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Navbar */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 2px;
+  background: rgb(252, 203, 211);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: background-color 0.15s 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  font-size: 18px;
+  color: darkred;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border-radius: 16px;
+}
+
+.navbar ul li a:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border-radius: 120px;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* popular-products section */
+
+.popular-products {
+    padding: 50px 20px;
+}
+
+.popular-products h1{
+    text-align: center;
+    margin-top: 30px ;
+    word-spacing: 4px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.product-card h3 {
+    margin: 15px 0 10px;
+    color: #333;
+}
+.product-card p {
+    color: darkred;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.product-card button {
+    background: darkred;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.product-card button:hover {
+    background: rgb(222, 143, 143);
+}
+
+/* categories section */
+
+/* Main Content */
+.main {
+    padding-top: 40px;
+    min-height: 100vh;
+  }
+
+  .main h1{
+    text-align: center;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .product-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .product-card h2 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+    color: darkred;
+  }
+
+  .product-card a {
+    display: block;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .product-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .product-card.featured {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #fff6f6, #ffe6e6);
+  }
+
+/* about section */
+
+/* About Section */
+.about-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Image Container */
+.about-image-container {
+    flex: 1;
+    min-width: 300px; /* Prevents image from shrinking too much */
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Info Section */
+.about-info {
+    flex: 1;
+    min-width: 300px; /* Ensures text block remains readable */
+    padding: 1rem 0;
+}
+
+/* Title */
+.about-title {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    color: #333;
+}
+
+/* Description */
+.about-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* laptops/desktops 1200px  */
+@media screen and (max-width: 1200px) {
+  .hero {
+    height: auto;
+    min-height: 80vh;
+  }
+}
+
+/* tablets, 992px  */
+@media screen and (max-width: 992px) {
+  .header {
+    padding: 8px 0;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .navbar ul li a {
+    font-size: 16px;
+    padding: 0.6em 1.2em;
+  }
+}
+
+/* Small devices 768px  */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .navbar ul {
+    gap: 10px;
+  }
+
+  .navbar ul li a {
+    font-size: 14px;
+    padding: 0.5em 1em;
+  }
+
+  .hero {
+    padding-top: 120px; 
+  }
+}
+
+/* phones, 576px */
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 8px 0;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .navbar ul li a {
+    font-size: 13px;
+    padding: 0.4em 0.8em;
+  }
+
+  .hero {
+    padding-top: 140px;
+  }
+}
+
+/* Mobile devices  */
+@media screen and (max-width: 320px) {
+  .logo img {
+    width: 80px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .navbar ul li a {
+    font-size: 12px;
+    padding: 0.3em 0.6em;
+  }
+
+  .hero {
+    padding-top: 160px;
+  }
+}
+
+
+@media screen and (max-height: 600px) {
+  .hero {
+    min-height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-title {
+        font-size: 2rem;
+    }
+}
