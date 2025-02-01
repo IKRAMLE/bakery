@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>Sweet Haven</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -18,9 +21,26 @@
 
         <nav class="navbar">
           <ul>
+            <div>
+              <div class="search-form">
+                <input type="text" placeholder="Search for baked goods..." class="search-input">
+                <i class="fas fa-search search-icon"></i>
+              </div>
+            </div>            
             <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact Us</a></li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -35,59 +55,58 @@
     <!-- popular products section -->
 
     <section class="popular-products">
-        <h1>Our Popular Products</h1>
-        <div class="product-container">
-            <div class="product-card">
-                <img src="images/classic-croissant.jpg" alt="Croissant">
-                <h3>Classic Croissant</h3>
-                <p>15 DH</p>
-                <button>Order Now</button>
-            </div>
-            <div class="product-card">
-                <img src="images/chocolate-croissant.jpg" alt="Chocolate Croissant">
-                <h3>Chocolate Croissant</h3>
-                <p>20 DH</p>
-                <button>Order Now</button>
-            </div>
-            <div class="product-card">
-                <img src="images/chocolate-chip-cookies.jpg" alt="Cookies">
-                <h3>Chocolate Chip Cookies</h3>
-                <p>13 DH</p>
-                <button>Order Now</button>
-            </div>
-            <div class="product-card">
-                <img src="images/new-york-cheeseccake.jpg" alt="Cheesecake">
-                <h3>New York Cheesecake</h3>
-                <p>35 DH</p>
-                <button>Order Now</button>
-            </div>
-            <div class="product-card">
-                <img src="images/strawberry-cake.jpg" alt="Strawberry Cake">
-                <h3>Strawberry Cake</h3>
-                <p>25 DH</p>
-                <button>Order Now</button>
-            </div>
-            <div class="product-card">
-                <img src="images/maccarons.jpg" alt="Macarons">
-                <h3>French Macarons</h3>
-                <p>45 DH</p>
-                <button>Order Now</button>
-            </div>
-            <div class="product-card">
-                <img src="images/blubbery-muffins.jpg" alt="Muffins">
-                <h3>Blueberry Muffins</h3>
-                <p>17 DH</p>
-                <button>Order Now</button>
-            </div>
-            <div class="product-card">
-                <img src="images/tiramisu.jpg" alt="Tiramisu">
-                <h3>Tiramisu</h3>
-                <p>23 DH</p>
-                <button>Order Now</button>
-            </div>
+      <h1>Our Popular Products</h1>
+      <div class="product-container">
+        <div class="product-card">
+          <img src="images/classic-croissant.jpg" alt="Croissant" />
+          <h3>Classic Croissant</h3>
+          <p>15 DH</p>
+          <button>Order Now</button>
         </div>
+        <div class="product-card">
+          <img src="images/chocolate-croissant.jpg" alt="Chocolate Croissant" />
+          <h3>Chocolate Croissant</h3>
+          <p>20 DH</p>
+          <button>Order Now</button>
+        </div>
+        <div class="product-card">
+          <img src="images/chocolate-chip-cookies.jpg" alt="Cookies" />
+          <h3>Chocolate Chip Cookies</h3>
+          <p>13 DH</p>
+          <button>Order Now</button>
+        </div>
+        <div class="product-card">
+          <img src="images/new-york-cheeseccake.jpg" alt="Cheesecake" />
+          <h3>New York Cheesecake</h3>
+          <p>35 DH</p>
+          <button>Order Now</button>
+        </div>
+        <div class="product-card">
+          <img src="images/strawberry-cake.jpg" alt="Strawberry Cake" />
+          <h3>Strawberry Cake</h3>
+          <p>25 DH</p>
+          <button>Order Now</button>
+        </div>
+        <div class="product-card">
+          <img src="images/maccarons.jpg" alt="Macarons" />
+          <h3>French Macarons</h3>
+          <p>45 DH</p>
+          <button>Order Now</button>
+        </div>
+        <div class="product-card">
+          <img src="images/blubbery-muffins.jpg" alt="Muffins" />
+          <h3>Blueberry Muffins</h3>
+          <p>17 DH</p>
+          <button>Order Now</button>
+        </div>
+        <div class="product-card">
+          <img src="images/tiramisu.jpg" alt="Tiramisu" />
+          <h3>Tiramisu</h3>
+          <p>23 DH</p>
+          <button>Order Now</button>
+        </div>
+      </div>
     </section>
-
 
     <!-- categories section -->
     <div class="main">
@@ -129,41 +148,39 @@
         </div>
       </div>
     </div>
-    
+
     <div class="about-container">
       <div class="about-image-container">
-          <img src="images/bakery.jpg" alt="Our Bakery" class="about-image">
+        <img src="images/bakery.jpg" alt="Our Bakery" class="about-image" />
       </div>
-  
-      <div class="about-info">
-          <h1 class="about-title">Welcome to Our Bakery</h1>
-          
-          <p class="about-description">
-              At our bakery, we bring you the finest selection of freshly baked goods, crafted with passion and the highest quality ingredients. From delicate pastries to artisan breads, our creations are made to delight your taste buds and warm your heart. 
-          </p>
-          
-          <p class="about-description">
-              Whether you’re craving a sweet treat or a comforting loaf of bread, we have something for everyone. Our bakery is committed to excellence, ensuring that every bite is a moment of pure indulgence. Come visit us and experience the magic of homemade flavors!
-          </p>
-      </div>
-  </div>
-  
 
+      <div class="about-info">
+        <h1 class="about-title">Welcome to Our Bakery</h1>
+
+        <p class="about-description">
+          At our bakery, we believe that every bite tells a story. Our journey
+          began with a simple love for baking and a passion for creating
+          mouthwatering delights that bring people together. Using only the
+          finest, carefully sourced ingredients, we craft a wide range of baked
+          goods that promise freshness, quality, and unforgettable taste.
+        </p>
+
+        <p class="about-description">
+          From flaky, buttery croissants to rich, chocolate-drizzled cakes, and
+          from artisan sourdough breads to delicate, hand-piped pastries, our
+          creations are designed to tantalize your taste buds. Each item is
+          prepared with dedication, ensuring that you experience the warmth and
+          joy of freshly baked treats in every bite.
+        </p>
+        <p class="about-description">
+          Whether you're stopping by for a quick morning pastry, selecting the
+          perfect cake for a special occasion, or simply indulging in a
+          comforting loaf of bread, we have something for every craving. Our
+          team of expert bakers pours their heart into every recipe, ensuring
+          that our bakery feels like a home away from home.
+        </p>
+        <a href="#" class="btn">Check Our Products</a>
+      </div>
+    </div>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
