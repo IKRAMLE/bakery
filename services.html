@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Sweet Haven</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+   .category-options {
+        display: flex;
+        justify-content: center;
+        margin-top: 8.5rem;
+        margin-right: -10px;
+        padding: 0 20px; 
+      }
+
+      .category-list {
+        display: flex;
+        gap: 5.5rem; 
+         list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+        .category-item {
+          background-color: rgb(255, 255, 255); 
+          padding: 12px 18px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          text-align: center;
+          min-width: 120px;  
+        }
+  
+        .category-item:hover {
+          background-color: darkred;
+          transform: translateY(-2px);  
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+        }
+  
+        .category-name {
+          color: rgb(0, 0, 0);
+          font-weight: bold;
+          margin: 0;
+          margin-bottom: 4px;
+        }
+  
+        .item-count {
+          color: rgb(0, 0, 0);
+          margin: 0;
+          font-size: 0.9rem;
+          opacity: 0.9;
+        }
+  
+        .category-item:hover .category-name,
+        .category-item:hover .item-count {
+          color: #ffffff;
+        }
+      </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <a href="">
+            <img src="images/logo.png" alt="Sweet Haven Logo" />
+          </a>
+        </div>
+
+        <nav class="navbar">
+          <ul>
+            <div>
+              <div class="search-form">
+                <input
+                  type="text"
+                  placeholder="Search for baked goods..."
+                  class="search-input"
+                />
+                <i class="fas fa-search search-icon"></i>
+              </div>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- products menu -->
+    <div class="category-options">
+      <ul class="category-list">
+        <li class="category-item">
+          <p class="category-name">Breads</p>
+          <p class="item-count">10 items</p>
+        </li>
+        <li class="category-item">
+          <p class="category-name">Croissants</p>
+          <p class="item-count">10 items</p>
+        </li>
+        <li class="category-item">
+          <p class="category-name">Cakes</p>
+          <p class="item-count">15 items</p>
+        </li>
+        <li class="category-item">
+          <p class="category-name">Cookies</p>
+          <p class="item-count">7 items</p>
+        </li>
+        <li class="category-item">
+          <p class="category-name">Cupcakes</p>
+          <p class="item-count">20 items</p>
+        </li>
+      </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h6>Menu</h6>
+          <ul>
+            <li><a href="#menu">Cakes</a></li>
+            <li><a href="#menu">Pastries</a></li>
+            <li><a href="#menu">Cookies</a></li>
+            <li><a href="#menu">Bread</a></li>
+            <li><a href="#menu">Desserts</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h6>About Us</h6>
+          <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#about">Our Bakers</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#careers">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h6>Support</h6>
+          <ul>
+            <li><a href="#contact">Customer Service</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Order Guide</a></li>
+            <li><a href="#">Delivery Options</a></li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h6>Follow Us</h6>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <img src="images/icons8-facebook-96.png" alt="Facebook" />
+              <span>Facebook</span>
+            </a>
+            <a href="#" class="social-link">
+              <img src="images/icons8-instagram-48.png" alt="Instagram" />
+              <span>Instagram</span>
+            </a>
+            <a href="#" class="social-link">
+              <img src="images/icons8-twitter-48.png" alt="Twitter" />
+              <span>Twitter</span>
+            </a>
+            <a href="#" class="social-link">
+              <img src="images/icons8-pinterest-48.png" alt="Twitter" />
+              <span>Pintrest</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025-2030 Sweet Haven Bakery | All Rights Reserved.
+          <br />
+          made with <i class="fa-solid fa-heart"></i> by Ikram
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Site Map</a>
+          <select class="language-select">
+            <option selected>Select Language</option>
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+          </select>
+        </div>
+      </div>
+    </footer> -->
+  </body>
+</html>
